@@ -5,6 +5,7 @@ import { OnChangePlugin } from "@lexical/react/LexicalOnChangePlugin";
 import theme from "./theme";
 import { LexicalErrorBoundary } from "@lexical/react/LexicalErrorBoundary";
 import { RichTextPlugin } from "@lexical/react/LexicalRichTextPlugin";
+import TreeViewPlugin from "./plugins/tree";
 
 const initialConfig = {
   namespace: "MyEditor",
@@ -33,6 +34,7 @@ function Editor() {
         />{" "}
         <HistoryPlugin />
         <OnChangePlugin onChange={console.log} />
+        <TreeViewPlugin />
       </LexicalComposer>
     </div>
   );
